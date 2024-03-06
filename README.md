@@ -1,3 +1,14 @@
+# Impression
+
+## Pros
+
+- tanstack よりは boiler なコード少なめ
+
+## Cons
+
+- `useParams` の引数 path を人間が指定する必要があり、間違えても type error にならない・static に検知できない
+  - e.g. `src/pages/blogs/[blogId].tsx`
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
