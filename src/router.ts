@@ -6,11 +6,13 @@ import { components, hooks, utils } from "@generouted/react-router/client"
 export type Path =
   | `/`
   | `/about`
+  | `/blogs/:blogId`
   | `/posts`
   | `/posts/:id`
   | `/posts/:id/comments/:commentId`
 
 export type Params = {
+  "/blogs/:blogId": { blogId: string }
   "/posts/:id": { id: string }
   "/posts/:id/comments/:commentId": { id: string; commentId: string }
 }

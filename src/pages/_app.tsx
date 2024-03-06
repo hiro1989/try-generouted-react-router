@@ -13,6 +13,14 @@ export default function App() {
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/posts">Posts</Link>
+        <Link
+          to="/blogs/:blogId"
+          params={{
+            blogId: Math.random().toString(36).substring(7),
+          }}
+        >
+          RandomBlog
+        </Link>
       </div>
       <hr />
       <Outlet />
